@@ -32,5 +32,4 @@ pom.xml.versionsBackup
 **/build
 **/target
 **/Californium.properties
-**/.env
 .instance_id
