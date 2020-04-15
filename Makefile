@@ -31,3 +31,4 @@ dev-build:
 # Build production
 prod-build:
 	docker run --rm -v $(PWD):/usr/src/$(APP_NAME) -v /usr/src/$(APP_NAME)/node_modules $(IMAGE_NAME) npm run build
+	cp ./target/generated-resources/public/static/custom-nodes-config.js $(TARGET_DIR)
