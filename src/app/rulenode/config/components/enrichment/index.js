@@ -16,7 +16,9 @@
 
 
 import GetSumIntoMetadataConfigDirective from './get-sum-into-metadata-config.directive';
+import GetTelemetryAndSumConfigDirective from './get-telemtry-and-config.directive';
 
 export default angular.module('thingsboard.ruleChain.config.enrichment', [])
     .directive('tbEnrichmentNodeSumIntoMetadataConfig', GetSumIntoMetadataConfigDirective)
+    .directive('tbEnrichmentNodeGetTelemetryAndSumConfig', GetTelemetryAndSumConfigDirective)
     .name;
