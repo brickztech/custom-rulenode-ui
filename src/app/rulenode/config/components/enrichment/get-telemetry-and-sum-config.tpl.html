@@ -1,10 +1,18 @@
 <section layout="column">
-    <md-input-container  style=padding-bottom:15px;>
+    <md-input-container>
+        <label translate>tb.rulenode.aggregate-function</label>
+        <md-select required ng-model="configuration.aggregateFunction">
+            <md-option ng-repeat="func in customRuleNodeTypes.aggregateFunction" ng-value="func">
+                {{ func }}
+            </md-option>
+        </md-select>
+    </md-input-container>
+    <md-input-container>
         <input ng-model="configuration.inputKey"
                placeholder="{{'tb.rulenode.input-key' | translate}}"
                ng-required="true">
     </md-input-container>
-    <md-input-container  style=padding-bottom:15px;>
+    <md-input-container>
         <input ng-model="configuration.outputKey"
                placeholder="{{'tb.rulenode.output-key' | translate}}"
                ng-required="true">

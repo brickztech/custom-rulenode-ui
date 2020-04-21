@@ -18,6 +18,7 @@ export default function addRuleNodeCoreLocaleEnglish($translateProvider) {
     var en_US = {
         "tb": {
             "rulenode": {
+                "aggregate-function": "Aggregate function",
                 "msg-key": "Message key",
                 "input-key": "Input key",
                 "output-key": "Output key",

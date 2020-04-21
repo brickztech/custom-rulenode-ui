@@ -6,13 +6,14 @@ import getTelemetryAndSumConfigTemplate from './get-telemetry-and-sum-config.tpl
 /* eslint-enable import/no-unresolved, import/default */
 
 /*@ngInject*/
-export default function GetTelemetryAndSumConfigDirective($compile) {
+export default function GetTelemetryAndSumConfigDirective($compile, customRuleNodeTypes) {
 
     var linker = function (scope, element, attrs, ngModelCtrl) {
         var template = getTelemetryAndSumConfigTemplate;
         element.html(template);
 
-
+        scope.customRuleNodeTypes = customRuleNodeTypes;
+        
         scope.$watch('configuration', function (newConfiguration, oldConfiguration) {
             if (!angular.equals(newConfiguration, oldConfiguration)) {
                 ngModelCtrl.$setViewValue(scope.configuration);
