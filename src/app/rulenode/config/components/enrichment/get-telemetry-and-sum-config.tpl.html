@@ -1,4 +1,9 @@
 <section layout="column">
+    <label translate class="tb-required">tb.rulenode.device-relations-query</label>
+    <tb-device-relations-query-config
+        style="padding-bottom: 15px;"
+        ng-model="configuration.deviceRelationsQuery">
+    </tb-device-relations-query-config>    
     <md-input-container>
         <label translate>tb.rulenode.aggregate-function</label>
         <md-select required ng-model="configuration.aggregateFunction">
