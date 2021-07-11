@@ -1,6 +1,6 @@
-# rule-node-examples-ui
+# iotop-rule-nodes-ui
  
- Configuration UI for Custom Rule Nodes from rule-node-examples ThingsBoard repository
+ Configuration UI for IoToP Custom Rule Nodes.
  
  ## Build steps
  
